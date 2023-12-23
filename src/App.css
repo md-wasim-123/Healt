@@ -1,38 +1,144 @@
-.App {
-  text-align: center;
-}
+@import url("https://fonts.googleapis.com/css2?family=Baloo+2:wght@800&family=Viga&display=swap");
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+html {
+  scroll-behavior: smooth;
+}
+.button-shw:hover {
+  box-shadow: rgba(118, 53, 220, 0.24) 0px 8px 16px 0px;
+}
+.navtext {
+  font-weight: lighter;
+  line-height: 1.57143;
+  font-size: 0.875rem;
+  font-family: "Public Sans", sans-serif;
+}
+.text-head {
+  font-weight: bolder;
+  font-family: "Baloo 2", sans-serif;
+  
+}
+.cardtextbg {
+  background-color: rgba(195, 255, 203, 0.297);
+  color: rgb(27, 156, 125);
+  font-weight: 700;
+}
+.move-img {
+  animation-direction: alternate;
+  animation: animatezoom 2s linear infinite linear;
+}
+@keyframes animatezoom {
+  0% {
+    transform: translate(200px, 0%);
+  }
+  50% {
+    transform: translate(50%, 0%);
+  }
+  100% {
+    transform: translate(30%, 0%);
   }
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.dropdownColor {
+  background-color: rgb(255, 255, 255);
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+.scroolnavcolor {
+  background: rgba(255, 255, 255, 0.804);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+.anime {
+  animation: slide-img 2s linear alternate infinite;
 }
 
-.App-link {
-  color: #61dafb;
-}
+/* herro section animation in image animation */
 
-@keyframes App-logo-spin {
+@keyframes slide-img {
   from {
-    transform: rotate(0deg);
+    transform: translateX(-20%);
   }
   to {
-    transform: rotate(360deg);
+    transform: translateX(0%);
   }
+}
+
+.anime-up {
+  animation: slide-img-up 2s linear alternate infinite;
+}
+/* herro section animation in image animation */
+
+@keyframes slide-img-up {
+  from {
+    transform: translatey(-10%);
+  }
+  to {
+    transform: translateX(0%);
+  }
+}
+.anime-m-up{
+  animation: anime-m-up 2s linear alternate infinite;
+}
+@keyframes anime-m-up{
+  from {
+    transform: translatey(15%);
+  }
+  to {
+    transform: translatey(0%);
+  }
+}
+.sidenav {
+  background-color: rgb(255, 255, 255);
+  animation: slide-in 1000ms;
+}
+/*   mobile slid nav bar animation */
+@keyframes slide-in {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0%);
+  }
+}
+.anime-b-lef{
+  animation: anime-b-lef 2s linear alternate infinite;
+}
+@keyframes anime-b-lef {
+  from {
+    transform: translatex(0%);
+  }
+  to {
+    transform: translateX(-20%);
+  }
+}
+/*========================== order card css start======================== */
+.pulses {
+  animation: pulse 1.1s ease-in-out infinite;
+}
+@keyframes pulse {
+  25% {
+    transform: scale(0.8);
+  }
+  75% {
+    transform: scale(0.9);
+  }
+}
+
+/*========================== order card css  end======================== */
+
+.colla {
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px;
+}
+
+
+/* logo box */
+.logohover:hover{
+  transition:all .5s ease-in-out;
+  border-radius: 10px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }

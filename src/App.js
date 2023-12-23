@@ -1,24 +1,33 @@
-import logo from './logo.svg';
+
 import './App.css';
+import Down from './components/Connect/Down';
+import HerroSection from './components/HerroSection/HerroSection';
+import Navbar from './components/Navbar/Navbar';
+// import ScrollCard from './components/Scroll/ScrollCard';
+import Order from './components/Order/Order';
+import Spon from './components/Sponser/Spon';
+import TESTIMONIALS from './components/TESTIMONIALS/TESTIMONIALS';
+import Ac from './components/activity/Ac';
+import Collapse from './components/randomColl/Collapse';
+import Banner from './components/scrollbanner/Banner';
+import Qus from './components/Question/Qus';
+import Footer from './components/Footer/Footer';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Navbar />
+      <HerroSection />
+      <Order />
+      <Collapse />
+      <Banner />
+      <Ac/>
+      <Down/>
+      <Spon/>
+      <TESTIMONIALS/>
+      <Qus/>
+      <Footer/>
+    </>
   );
 }
 
